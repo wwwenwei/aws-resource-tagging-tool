@@ -51,13 +51,13 @@ python generate_service_config.py --output aws_service_config.json
 ### 扫描未标记的资源
 
 ```bash
-python add_service_tag.py --tag-key map-migrated --output untagged_resources.json
+python add_service_tag.py --tag-key xxx-xxxx --output untagged_resources.json
 ```
 
 ### 应用标签
 
 ```bash
-python add_service_tag.py --input untagged_resources.json --tag-key map-migrated --tag-value d-server-01234567 --apply
+python add_service_tag.py --input untagged_resources.json --tag-key xxx-xxxx --tag-value xxxx --apply
 ```
 
 ## 命令行参数
