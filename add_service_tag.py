@@ -125,7 +125,7 @@ def get_enabled_services(region):
     
     return enabled_services
 
-def get_untagged_resources(account_id, regions=None, services=None, tag_key='map-migrated', max_workers=10):
+def get_untagged_resources(account_id, regions=None, services=None, tag_key='map-xxx', max_workers=10):
     """
     获取未打指定标签的资源
     
@@ -162,7 +162,7 @@ def get_untagged_resources(account_id, regions=None, services=None, tag_key='map
     
     return untagged_resources
 
-def process_region(account_id, region, services=None, tag_key='map-migrated'):
+def process_region(account_id, region, services=None, tag_key='map-xxx'):
     """处理单个区域的资源"""
     logger.info(f"正在处理区域: {region}")
     region_resources = {}
