@@ -66,8 +66,8 @@ python add_service_tag.py --input untagged_resources.json --tag-key xxx-xxxx --t
 
 - `--regions`：要处理的 AWS 区域列表（默认：所有区域）
 - `--services`：要处理的 AWS 服务列表（默认：所有支持的服务）
-- `--tag-key`：要检查或添加的标签键（默认：map-migrated）
-- `--tag-value`：添加标签时使用的标签值（默认：d-server-01234567）
+- `--tag-key`：要检查或添加的标签键
+- `--tag-value`：添加标签时使用的标签值
 - `--output`：输出资源文件路径（默认：untagged_resources.json）
 - `--input`：输入资源文件路径（用于应用标签）
 - `--apply`：应用标签（如果不指定，则只列出未打标签的资源）
